@@ -1,0 +1,32 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+export interface Props {
+  title: string;
+  description?: string;
+  date?: string;
+}
+
+const { title, description, date } = Astro.props;
+---
+
+<BaseLayout title={title} description={description}>
+  <article class="markdown-content">
+    {date && (
+      <div class="post-meta">
+        <time datetime={date}>{new Date(date).toLocaleDateString()}</time>
+      </div>
+    )}
+    <slot />
+  </article>
+</BaseLayout>
+
+<style>
+  .post-meta {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+  }
+</style>
