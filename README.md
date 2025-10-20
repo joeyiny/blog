@@ -1,1 +1,1 @@
-my site
+https://joeyiny-site.netlify.app
