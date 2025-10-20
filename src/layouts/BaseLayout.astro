@@ -27,14 +27,14 @@ const { title, description = "Joey Iny" } = Astro.props;
       <nav>
         <a href="/">Joey Iny</a>
       </nav>
+
+      <main>
+        <slot />
+      </main>
+
+      <footer>
+        <p><a href="https://x.com/joeyiny">★</a></p>
+      </footer>
     </header>
-
-    <main>
-      <slot />
-    </main>
-
-    <footer>
-      <p><a href="https://x.com/joeyiny">★</a></p>
-    </footer>
   </body>
 </html>
