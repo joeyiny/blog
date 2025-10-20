@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 html {
-    background: #fcfbf8;
+    background: #f5f4f2;
     color: #1b1a1c;
         padding: 0.5em;
         font-size: 1.1em;
@@ -24,9 +24,24 @@ article {
     max-width: 30rem;
 }
 
-footer {}
+footer {
+    font-size: 0.9em;
+    line-height: 1.5em;
+    color: #aaa;
+    padding-top: 24px;
+    margin-top: 40px;
+    border-top: 1px dashed rgb(219, 219, 212);
+}
 
 pre {
     padding: 1em;
     border-radius: 4px;
+}
+a {
+    color: #5575c7;
+}
+
+.date {
+    color: #aaa;
+    font-style: italic;
 }
