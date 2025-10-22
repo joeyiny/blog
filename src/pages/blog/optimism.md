@@ -1,4 +1,8 @@
-# Optimism is in short supply
+---
+layout: ../../layouts/MarkdownLayout.astro
+title: "Optimism is in short supply"
+date: "2025-10-22"
+---
 
 *This is a post for startup founders.*
 
